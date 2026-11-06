@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="CanalPlusSport2SK.sk@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ab/CANAL%2B_SPORT_2.svg/revision/latest?cb=20241028202739" group-title="4. Sport - Indonesia",Canal+ Sport 2 SK
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-sk-canal-plus-sport2/live_fullhd?offsetSeconds=0

@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="AztecaDeportesNetwork.mx@SD" tvg-logo="https://match-images.icdb.tv/5913207f2494844101287828e87625eb.jpg" group-title="4. Sport - Indonesia",Azteca Deportes Network (1080p)
+http://209.14.115.253:8081/azteca-deportes/index.m3u8

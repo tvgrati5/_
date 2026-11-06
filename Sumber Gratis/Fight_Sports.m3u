@@ -3,5 +3,3 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 https://proxy-v.rctiplus.id/live/web/fightsports/index.m3u8
-#EXTINF:-1 group-title="SPORTS INDO" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/image_ch_fightsport.png",Fight Sports
-https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd

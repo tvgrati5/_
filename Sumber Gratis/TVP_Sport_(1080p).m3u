@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="TVPSport.pl@SD" tvg-logo="https://i.imgur.com/JUZDOCO.png" group-title="4. Sport - Indonesia",TVP Sport (1080p)
+http://57.128.210.196:8080/134/index.m3u8

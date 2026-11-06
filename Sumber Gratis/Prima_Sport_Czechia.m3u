@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="PrimaSportCzechia.cz@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/69/Prima_Sport_%28Czech_Republic%29.svg/revision/latest?cb=20260728085614" group-title="4. Sport - Indonesia",Prima Sport Czechia
+http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/prima_sport/live_mq?offsetSeconds=0

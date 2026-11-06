@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="CTSport.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/%C4%8CT_sport_logo.png/960px-%C4%8CT_sport_logo.png" group-title="4. Sport - Indonesia",CT Sport (720p)
+http://88.212.15.50/live/test_ctsport_25p/playlist.m3u8

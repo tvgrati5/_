@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="MSG.us@SD" tvg-logo="https://i.imgur.com/SEQFh0P.png" group-title="4. Sport - Indonesia",MSG (720p)
+http://23.237.104.106:8080/USA_MSG/index.m3u8

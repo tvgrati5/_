@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="5Plus.il@SD" tvg-logo="https://i.imgur.com/L3RA9Lv.png" group-title="4. Sport - Indonesia",5Plus (1080p)
+http://89.33.29.115:8080/sportplus/index.m3u8

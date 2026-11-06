@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="OkkoFutbol.ru@SD" tvg-logo="https://xml-epgservice.cdnvideo.ru/EPGService/hs/xmldata/852f4b92-cae5-463e-aad6-cd8844c5a49/logo/8986.png" group-title="4. Sport - Indonesia",Okko Futbol (576p)
+http://178.124.179.122:8080/Setanta1/index.m3u8

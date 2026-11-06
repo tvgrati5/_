@@ -2,3 +2,5 @@
 #EXTINF:-1 tvg-id="DAAITV.id@SD" group-title="Daerah" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/image_ch_daaitv.png",DAAI TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8
+#EXTINF:-1 tvg-id="DAAITV.id@SD" tvg-logo="https://i.imgur.com/YC7JCHo.png" group-title="3. Religiuos (Islamic & General)",DAAI TV
+https://pull.daaiplus.com/live-DAAIPLUS/live-DAAIPLUS_HD.m3u8

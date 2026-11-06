@@ -1,5 +1,3 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="NF058952" tvg-logo="https://tcl-channel-cdn.ideonow.com/static/channel/NF058952/1745950429820291187-NF058952_delivery_logo_color.png" group-title="TCL",NFL Channel
 https://c300.play.lura.app/play/v1/live/WZLF7alakBQFSwod957XVA/master.m3u8?PlatformChild=%7BPLATFORM_CHILD%7D&app=hY5YgA1ANpnKf-eBLDzMpA&auth=-1ONpOzf1t9agH-2jan30hUkPqL1XvLabel6jlet9PQ&coppa=%28TAG-FOR-CHILD-DIRECT-BOOLEAN%29&encoder=DC1-TCL&exp=2336838974&islat=%7BDNT%7D&rdid=%7BDEVICE_ID%7D&rdp=1YN-&screenh=1080&screenw=1920&ts=1706118973909&usprivacy=1YN-
-#EXTINF:-1 tvg-id="XUMO_99991738" tvg-logo="https://image.xumo.com/v1/channels/channel/99991738/300x300.webp?type=color_onBlack" group-title="OLAHRAGA AMERIKA",NFL Channel
-https://c300.play.lura.app/play/v1/live/ZHx8AbT0xVvm1el0epd7vw/master.m3u8?ts=1668459044045&app=Mp8DA1vKVAoO4yHJ0QFZ3w&exp=2299179044&auth=8HJTwR6prnzFjGE2Ki_8pfvwxMRvWtSwRm3R54TN3_w&PlatformChild=[PLATFORM_CHILD]&usprivacy=[CCPA_Value]&coppa=0&autoplay=auto&videomute=0&encoder=DC1-XUMO&fwDid=[IFA]&tmsid=121705&palnonce=&rdid=[IFA]&islat=[IS_LAT]&atts=&attmas=&idfv=&screenw=1920&screenh=1080&title=[content_title]

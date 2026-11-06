@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ESPNPremium.ar@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="6. Sport - Champions & European Leagues",ESPN Premium HD (1080p)
+http://158.172.155.130:8000/play/a0ao/index.m3u8

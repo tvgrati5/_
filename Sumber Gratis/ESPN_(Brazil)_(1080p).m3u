@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ESPN.br@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="6. Sport - Champions & European Leagues",ESPN (Brazil) (1080p)
+http://181.78.197.59:8000/play/a07z/index.m3u8

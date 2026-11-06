@@ -3,8 +3,16 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 https://proxy-v.rctiplus.id/live/web/alquran/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://static.xoilaczzggz.tv/images/logo-xlz.png" group-title="LIVE FEED SPORT (ON JIKA MAIN)",FOOTBALL TV 9 KEN
-https://live2.streamhaulcdn.com/livecdn/channel-18.m3u8?auth_key=3000001788113358-0-0-9fad909456a0ac281492578fa7ef1bc4
+#EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa@SD" tvg-logo="https://aloula.faulio.com/storage/mediagallery/33/92/fullhd_879e557011826f507a045b4e0b4c3b57ba93edae.png" group-title="3. Religiuos (Islamic & General)",Al Sunnah Al Nabawiyah TV (720p)
+http://m.live.net.sa:1935/live/sunnah/gmswf.m3u8
+#EXTINF:-1 tvg-id="AlWafaTarim.id@SD" tvg-logo="https://i.ibb.co/3yfMjmf/logo-3.png" group-title="3. Religiuos (Islamic & General)",Al Wafa Tarim (720p)
+https://ammedia.siar.us/ammedia/live/playlist.m3u8
+#EXTINF:-1 tvg-id="AlBahjahTV.id@SD" tvg-logo="https://i.imgur.com/52dlDZk.png" group-title="3. Religiuos (Islamic & General)",Al-Bahjah TV (1080p)
+http://202.150.161.117:8000/play/AlBahjahTV
+#EXTINF:-1 tvg-id="TV9Nusantara.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/id/e/ed/TV9_Nusantara.png" group-title="3. Religiuos (Islamic & General)",TV 9 Nusantara (720p)
+https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
+#EXTINF:-1 tvg-id="MQTV.id@SD" tvg-logo="https://i.imgur.com/d8dQo6E.png" group-title="3. Religiuos (Islamic & General)",MQTV (720p) [Not 24/7]
+https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8
 #EXTINF:-1 tvg-id="RCTI.id@SD" group-title="Nasional" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/imageCir_RCTI-180x180_2025_11_06_13_09_06.jpg",RCTI
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
@@ -116,3 +124,5 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h24/index.m3u8
 #EXTINF:-1 group-title="Daerah" tvg-logo="https://pic.dens.tv/tv_183x174/BN_Channel_(Trial)_1.jpg",BN Channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://op-flashcon-digdayahd-1.dens.tv/h/h108/index.m3u8
+#EXTINF:-1 tvg-id="VTV6.vn@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/VTV6_logo_2026_final.svg/960px-VTV6_logo_2026_final.svg.png" group-title="4. Sport - Indonesia",VTV6 (1080p)
+https://vips-livecdn.fptplay.net/live/media/vtv6/live247-hls-avc/index.m3u8
