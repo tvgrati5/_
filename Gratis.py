@@ -4,7 +4,7 @@ import urllib.request
 
 SOURCES_FILE = "sources.txt"
 OUTPUT_DIR = "Sumber Gratis"
-EXCLUDE_FILE = "chanel_pilihan.txt"  # Sekarang berfungsi sebagai daftar yang KECUALI / DIKECUALIKAN
+SELECT_FILE = "chanel_pilihan.txt"
 CUSTOM_PLAYLIST = "ZeroTVGRATIS.m3u"
 
 GITHUB_TOKEN = os.environ.get("GH_PAT", "")
@@ -47,6 +47,7 @@ def parse_and_split_m3u():
         return
 
     channels = {}
+    all_blocks = []
 
     for url_idx, source_url in enumerate(source_urls, 1):
         print(f"Mengambil data dari URL ke-{url_idx}: {source_url}")
@@ -64,6 +65,10 @@ def parse_and_split_m3u():
             if line.startswith("#EXTINF:"):
                 extinf_line = line
                 
+                # Cek nama kategori (group-title) jika ada di baris EXTINF
+                group_match = re.search(r'group-title="([^"]+)"', extinf_line, re.IGNORECASE)
+                group_name = group_match.group(1) if group_match else ""
+
                 match = re.search(r',([^,]+)$', extinf_line)
                 raw_name = match.group(1).strip() if match else "Unknown"
                 clean_name = re.sub(r'\.\d+[A-Z]+$', '', raw_name)
@@ -83,9 +88,17 @@ def parse_and_split_m3u():
                         block_lines.append(next_line)
                     i += 1
 
+                # Simpan untuk file terpisah per channel
                 if safe_name not in channels:
                     channels[safe_name] = []
                 channels[safe_name].append(block_lines)
+
+                # Simpan ke daftar keseluruhan beserta info nama & kategorinya untuk disaring
+                all_blocks.append({
+                    "name": safe_name,
+                    "group": group_name,
+                    "lines": block_lines
+                })
             i += 1
 
     # 1. Simpan file M3U terpisah per channel di folder Sumber Gratis
@@ -97,35 +110,37 @@ def parse_and_split_m3u():
                 for bline in block:
                     f.write(f"{bline}\n")
 
-    # 2. Ambil daftar channel yang ingin DIKECUALIKAN (dibuang) dari chanel_pilihan.txt
-    excluded_norms = set()
-    if os.path.exists(EXCLUDE_FILE):
-        with open(EXCLUDE_FILE, "r", encoding="utf-8") as f:
-            excluded_names = [line.strip() for line in f if line.strip() and not line.startswith("#")]
-            excluded_norms = {normalize_name(name) for name in excluded_names}
+    # 2. Baca daftar pengecualian (blacklist) dari chanel_pilihan.txt
+    excluded_keywords = []
+    if os.path.exists(SELECT_FILE):
+        with open(SELECT_FILE, "r", encoding="utf-8") as f:
+            excluded_keywords = [normalize_name(line.strip()) for line in f if line.strip() and not line.startswith("#")]
 
-    # 3. Buat playlist gabungan: SEMUA channel dimasukkan, KECUALI yang ada di daftar pengecualian
+    # 3. Buat playlist utama ZeroTVGRATIS.m3u (Otomatis masuk SEMUA kecuali yang ada di blacklist)
     with open(CUSTOM_PLAYLIST, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        total_added = 0
-        total_excluded = 0
-        
-        for safe_name, blocks in channels.items():
-            norm_name = normalize_name(safe_name)
+        added_count = 0
+        skipped_count = 0
+
+        for item in all_blocks:
+            c_name_norm = normalize_name(item["name"])
+            c_group_norm = normalize_name(item["group"])
             
-            # Cek apakah channel ini masuk daftar pengecualian
-            is_excluded = any(exc in norm_name or norm_name in exc for exc in excluded_norms)
+            # Cek apakah nama channel atau kategori mengandung kata-kata yang dikecualikan
+            is_excluded = False
+            for keyword in excluded_keywords:
+                if keyword and (keyword in c_name_norm or keyword in c_group_norm):
+                    is_excluded = True
+                    break
             
             if is_excluded:
-                print(f"Channel dikecualikan (dibuang): {safe_name}")
-                total_excluded += 1
+                skipped_count += 1
             else:
-                for block in blocks:
-                    for bline in block:
-                        f.write(f"{bline}\n")
-                total_added += 1
+                for bline in item["lines"]:
+                    f.write(f"{bline}\n")
+                added_count += 1
 
-        print(f"Berhasil memperbarui playlist custom: {CUSTOM_PLAYLIST} (Ditambahkan: {total_added}, Dikecualikan: {total_excluded})")
+        print(f"Berhasil memperbarui {CUSTOM_PLAYLIST}: {added_count} channel ditambahkan, {skipped_count} channel/kategori dikecualikan.")
 
 if __name__ == "__main__":
     parse_and_split_m3u()
