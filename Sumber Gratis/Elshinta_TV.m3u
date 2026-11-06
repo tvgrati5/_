@@ -1,0 +1,4 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="ElshintaTV.id@SD" group-title="Daerah" tvg-logo="https://pic.dens.tv/tv_183x174/1578297960_square.jpg",Elshinta TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://op-flashcon-digdayasd-1.dens.tv/h/h216/stream.m3u8

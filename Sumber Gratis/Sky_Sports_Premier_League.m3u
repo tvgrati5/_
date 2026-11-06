@@ -1,0 +1,4 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Sky sports" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-L0sZjEZ3cKD6i2P3EJFYekiy9N4TwPgmqgr268Row&s=10" tvg-id="skysports.com" group-title=" Sky & Astro",Sky Sports Premier League
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+http://iptv.watchhd.to:5050/didi1909/8mMDqRPor23t/310091

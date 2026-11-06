@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 group-title="PIALA JERMAN (DFB POKAL)" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwaod70x_TTcRW23akb0kM2vxe_SocNunFggpRhm0llHb9Zzg17HOO8T8&s=10",Premier Sports 1
+https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
+#EXTINF:-1 tvg-logo="https://www.reasonwhy.es/media/library/laliga-nueva-identidad-visual.gif" tvg-id="itzplay.id" group-title="LA LIGA", Premier Sports 1
+https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd

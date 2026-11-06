@@ -1,0 +1,6 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="XUMO_99951469" tvg-logo="https://image.xumo.com/v1/channels/channel/99951469/300x300.webp?type=color_onBlack" group-title="SPORTS FIGHT",HBO Boxing
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=a4b2fe10c9d62d32220e8ea2dceda6f9:e6e1173c892f7fbd60a37a76a78935cb
+https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/9a6uh9e0rz/out/v1/4ca8071b437142ffb1bea21340b0ba05/cenc.mpd

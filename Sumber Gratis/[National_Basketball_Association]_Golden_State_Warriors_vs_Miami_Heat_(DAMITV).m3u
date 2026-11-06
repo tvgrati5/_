@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-chno="216" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Golden State Warriors vs Miami Heat (DAMITV)" tvg-logo="https://damitv.st/img/cards/nba/401909937.jpg?v=ghst2nf" group-title="Live Events",[National Basketball Association] Golden State Warriors vs Miami Heat (DAMITV)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=espn-401909937
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+https://messi.damitv.st/live-hls/channel/nba/2026-11-05/mia-gs/playlist.m3u8?tk=mS_PtueTvRWS7rsUKD5JeA&e=1793975406

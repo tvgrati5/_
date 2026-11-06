@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="XUMO_99991645" tvg-logo="https://image.xumo.com/v1/channels/channel/99991645/300x300.webp?type=color_onBlack" group-title="OLAHRAGA AMERIKA",CBS Sports HQ
+https://dai.google.com/linear/hls/event/9Lq0ERvoSR-z9AwvFS-xYA/master.m3u8?imafw_csid=[CBSSPORTS_CSID];imafw__fw_h_referer=com.xumo.app&imafw__fw_did=dpid:[deviceID]&imafw__fw_is_lat=[LIMITED_AD_TRACKING]&imafw__fw_vcid2=[PPID]&imafw__fw_app_bundle=[app_bundle]&imafw_is_lat=[LIMITED_AD_TRACKING]

@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 channel-id="664c94e80120f40008b860f0" tvg-id="664c94e80120f40008b860f0" tvg-chno="889" tvg-name="POP" tvg-logo="https://images.pluto.tv/channels/664c94e80120f40008b860f0/colorLogoPNG.png" group-title="PLUTO",POP
+https://jmp2.uk/plu-664c94e80120f40008b860f0.m3u8
+#EXTINF:-1 channel-id="GBBC430000128" tvg-id="GBBC430000128" tvg-chno="4799" tvg-name="POP" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBC430000128_20250107T030729SQUARE.png" group-title="SAMSUNG",POP
+https://jmp2.uk/stvp-GBBC430000128

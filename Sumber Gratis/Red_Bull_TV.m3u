@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 group-title="SPORTS INDO" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/4YIBApo.png",Red Bull TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 group-title="SPORTS LUAR" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqRC09q40CZym_I0TfbRzuBEKIJL-L-hOsA&s",Red Bull TV
+#EXTVLCOPT:http-user-agent=ExoPlayer/2.19.1 (Linux; Android 15) Media3/1.6.0
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8

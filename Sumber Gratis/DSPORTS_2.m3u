@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 group-title="WORLD CUP U-17 WOMEN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS7QdTg9mBzgpE9ry08K6HlTXgSYs3E1uYivgEr--jYgz7lRzP9ygjVPc&s=10",DSPORTS 2
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=18044a84b7e6c1bbf852591797e53a2c:38b3b6f8810917d89636927bddb79294
+https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash-sd/enc/hufm7lgnhx/out/v1/5045630288d44123ba85427b2c36f29f/cenc-sd.mpd

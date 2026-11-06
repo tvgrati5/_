@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 channel-id="GB2600020OP" tvg-id="GB2600020OP" tvg-chno="4906" tvg-name="Comedy Movies - Rakuten TV" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB2600020OP_20260707T052017SQUARE.png" group-title="SAMSUNG",Comedy Movies - Rakuten TV
+https://jmp2.uk/stvp-GB2600020OP
+#EXTINF:-1 tvg-id="RK802499" tvg-logo="https://tcl-channel-cdn.ideonow.com/static/channel/RK802499/7909858586640640-COMEDY_SC_logo_color.jpg" group-title="TCL",Comedy Movies - Rakuten TV
+https://comedy-rakuten-tv-us.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-7861/master.m3u8?ads.app_bundle=&ads.app_name=&ads.app_store_url=&ads.brand_name=&ads.content_livestream=0&ads.device_lmt=&ads.device_model=&ads.did=&ads.gdpr_consent=0&ads.ifa_type=aaid&ads.inv_partner_domain=rakuten.tv&ads.market=us&ads.platform=tcl_channels&ads.pod_type=playerpage_midroll&ads.rtv_channel_name=comedy-rakuten-tv_us&ads.rtv_content_id=7861&ads.rtv_language=en&channel_id=7861&publishing_platform_id=9&tenant_identifier=rtv

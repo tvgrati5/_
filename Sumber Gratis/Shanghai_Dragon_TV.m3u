@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="DragonTV.cn@SD" group-title="Entertainment" tvg-logo="https://www.visionplus.id/images/repository/683/683-LOGO-m.png",Shanghai Dragon TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+https://proxy-v.rctiplus.id/live/ios/shanghai/index.m3u8

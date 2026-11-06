@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 group-title="OLAHRAGA LOKAL" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLrvbMSyw6ya4Ce7iO90shKuHgJ2zMzkSrTc151ABhQ&s=10", TVRI SPORT
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://klik.tvri.go.id/
+https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8

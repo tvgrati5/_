@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="MuslimTV.id@SD" group-title="Religi" tvg-logo="https://www.visionplus.id/images/repository/896/576896-SQUARE-l.jpg",Muslim TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+https://proxy-v.rctiplus.id/live/web/muslimtv/index.m3u8

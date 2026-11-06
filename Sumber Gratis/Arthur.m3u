@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 channel-id="62556bfa3261a300076b0baa" tvg-id="62556bfa3261a300076b0baa" tvg-chno="881" tvg-name="Arthur" tvg-logo="https://images.pluto.tv/channels/62556bfa3261a300076b0baa/colorLogoPNG.png" group-title="PLUTO",Arthur
+https://jmp2.uk/plu-62556bfa3261a300076b0baa.m3u8
+#EXTINF:-1 channel-id="6482f27c17f5e10008c10ff0" tvg-id="6482f27c17f5e10008c10ff0" tvg-chno="1220" tvg-name="Arthur" tvg-logo="https://images.pluto.tv/channels/6482f27c17f5e10008c10ff0/colorLogoPNG.png" group-title="PLUTO",Arthur
+https://jmp2.uk/plu-6482f27c17f5e10008c10ff0.m3u8
