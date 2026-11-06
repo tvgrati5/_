@@ -1,2 +1,3 @@
-https://raw.githubusercontent.com/Username/Repo1/main/path/file1.m3u
-https://raw.githubusercontent.com/Username/Repo2Private/main/path/file2.m3u
+https://raw.githubusercontent.com/apistech/project/refs/heads/main/IndihomeTV.m3u
+https://raw.githubusercontent.com/Grati5555/Dasar/refs/heads/main/MasterKokoUyo.m3u
+https://raw.githubusercontent.com/apistech/project/refs/heads/main/playlists/liveeventsfilter.m3u8
