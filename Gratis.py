@@ -4,7 +4,7 @@ import urllib.request
 
 SOURCES_FILE = "sources.txt"
 OUTPUT_DIR = "Sumber Gratis"
-SELECT_FILE = "chanel_pilihan.txt"
+EXCLUDE_FILE = "chanel_pilihan.txt"  # Sekarang berfungsi sebagai daftar yang KECUALI / DIKECUALIKAN
 CUSTOM_PLAYLIST = "ZeroTVGRATIS.m3u"
 
 GITHUB_TOKEN = os.environ.get("GH_PAT", "")
@@ -47,7 +47,6 @@ def parse_and_split_m3u():
         return
 
     channels = {}
-    normalized_channels = {}
 
     for url_idx, source_url in enumerate(source_urls, 1):
         print(f"Mengambil data dari URL ke-{url_idx}: {source_url}")
@@ -87,11 +86,6 @@ def parse_and_split_m3u():
                 if safe_name not in channels:
                     channels[safe_name] = []
                 channels[safe_name].append(block_lines)
-                
-                norm_key = normalize_name(safe_name)
-                if norm_key not in normalized_channels:
-                    normalized_channels[norm_key] = []
-                normalized_channels[norm_key].append(block_lines)
             i += 1
 
     # 1. Simpan file M3U terpisah per channel di folder Sumber Gratis
@@ -103,28 +97,35 @@ def parse_and_split_m3u():
                 for bline in block:
                     f.write(f"{bline}\n")
 
-    # 2. Buat playlist gabungan berdasarkan chanel_pilihan.txt secara fleksibel
-    if os.path.exists(SELECT_FILE):
-        with open(SELECT_FILE, "r", encoding="utf-8") as f:
-            selected_names = [line.strip() for line in f if line.strip() and not line.startswith("#")]
+    # 2. Ambil daftar channel yang ingin DIKECUALIKAN (dibuang) dari chanel_pilihan.txt
+    excluded_norms = set()
+    if os.path.exists(EXCLUDE_FILE):
+        with open(EXCLUDE_FILE, "r", encoding="utf-8") as f:
+            excluded_names = [line.strip() for line in f if line.strip() and not line.startswith("#")]
+            excluded_norms = {normalize_name(name) for name in excluded_names}
+
+    # 3. Buat playlist gabungan: SEMUA channel dimasukkan, KECUALI yang ada di daftar pengecualian
+    with open(CUSTOM_PLAYLIST, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        total_added = 0
+        total_excluded = 0
         
-        if selected_names:
-            with open(CUSTOM_PLAYLIST, "w", encoding="utf-8") as f:
-                f.write("#EXTM3U\n")
-                for name in selected_names:
-                    norm_target = normalize_name(name)
-                    found = False
-                    for n_key, blocks in normalized_channels.items():
-                        if norm_target in n_key or n_key in norm_target:
-                            for block in blocks:
-                                for bline in block:
-                                    f.write(f"{bline}\n")
-                            print(f"Channel ditambahkan (fleksibel): {name}")
-                            found = True
-                            break
-                    if not found:
-                        print(f"Channel pilihan tidak ditemukan: {name}")
-            print(f"Berhasil memperbarui playlist custom: {CUSTOM_PLAYLIST}")
+        for safe_name, blocks in channels.items():
+            norm_name = normalize_name(safe_name)
+            
+            # Cek apakah channel ini masuk daftar pengecualian
+            is_excluded = any(exc in norm_name or norm_name in exc for exc in excluded_norms)
+            
+            if is_excluded:
+                print(f"Channel dikecualikan (dibuang): {safe_name}")
+                total_excluded += 1
+            else:
+                for block in blocks:
+                    for bline in block:
+                        f.write(f"{bline}\n")
+                total_added += 1
+
+        print(f"Berhasil memperbarui playlist custom: {CUSTOM_PLAYLIST} (Ditambahkan: {total_added}, Dikecualikan: {total_excluded})")
 
 if __name__ == "__main__":
     parse_and_split_m3u()
