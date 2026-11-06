@@ -1,0 +1,32 @@
+name: Auto Update ZeroTV Gratis
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Berjalan otomatis setiap 1 jam
+  workflow_dispatch:      # Tombol jalankan manual di web GitHub
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run script with Secret Token
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: python Gratis.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add "Sumber Gratis/" sources.txt chanel_pilihan.txt ZeroTVGRATIS.m3u
+          git diff --quiet && git diff --cached --quiet || (git commit -m "Auto-update ZeroTVGRATIS with private token [skip ci]" && git push)
