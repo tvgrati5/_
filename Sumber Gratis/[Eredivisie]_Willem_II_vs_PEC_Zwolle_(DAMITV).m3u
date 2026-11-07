@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-chno="54" tvg-id="Soccer.Dummy.us" tvg-name="[Eredivisie] Willem II vs PEC Zwolle (DAMITV)" tvg-logo="https://damitv.st/img/cards/ned.1/401875556.jpg?v=3nf" group-title="Live Events",[Eredivisie] Willem II vs PEC Zwolle (DAMITV)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mm-own-34e4d633e9
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+https://messi.damitv.st/live-hls/channel/eredivisie/2026-11-06/wil-pec/playlist.m3u8?tk=A-sXad4JLgBms43vs1lp7w&e=1794033009
