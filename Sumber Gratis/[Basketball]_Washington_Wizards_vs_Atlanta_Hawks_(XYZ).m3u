@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-chno="23" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[Basketball] Washington Wizards vs Atlanta Hawks (XYZ)" tvg-logo="https://images.grassy-level770.workers.dev/?logo1=https://a.espncdn.com/i/teamlogos/nba/500/wsh.png&logo2=https://a.espncdn.com/i/teamlogos/nba/500/atl.png&logo3=https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png&color1=e31837&color2=c8102e&q=65&w=100" group-title="Live Events",[Basketball] Washington Wizards vs Atlanta Hawks (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/nba-1.html
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+https://us-xyz.work.gd/nba1h/mono.ts.m3u8?token=a18e997cfefc3401ebf496b459964071
